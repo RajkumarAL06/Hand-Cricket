@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+
+    <div class="headline">
+        <h1>::Hand Cricket::</h1>
+        <h2>Play with COMPO🤖</h2>
+    </div>
+
+    <div class="msg_container hide">
+        <p class="msg1">player score.</p>
+        <p class="msg2">compo score.</p>
+        <p class="msg3">Winner</p>
+        <button class="reset">New Game</button>
+        <button class="change_player">Change Player</button>
+    </div>
+
+    <div class="Toss">
+
+        <p id="firstline" class="hide">Won the toss!</p>
+        <p id="secondline" class="hide">Choose Bat or Ball</p>
+        <p id="thirdline" class="hide">You vs COMPO 🤖</p>
+
+        <button id="tos" >TOSS</button>
+
+        <div class="coin_choice hide">
+            <button id="hed">Head</button>
+            <button id="tel">Tail</button>
+        </div>
+
+        <div class="bat_bal hide">
+            <button id="bat">Bat</button>
+            <button id="ball">Ball</button>
+        </div>
+
+        <p class="bat-bowl hide">
+            Batting: <span id="batting-player"></span> 
+            Bowling: <span id="bowling-player"></span>
+        </p>
+        <button id="play" class="hide">Play</button>
+
+        <p id="player-score" class="hide">Player Score: 0</p>
+        <p id="computer-score" class="hide">Compo🤖 Score: 0</p>
+
+        <p id="out-msg" class="hide">OUT!</p>
+
+    </div>
+    <main>
+        <div class="container hide">
+            <div class="colomn">
+                <p id="p">Player</p>
+                <div class="boxes">
+                    <button class="pbox">1</button>
+                    <button class="pbox">2</button>
+                    <button class="pbox">3</button>
+                    <button class="pbox">4</button>
+                    <button class="pbox">5</button>
+                    <button class="pbox">6</button>
+                </div>
+            </div>
+
+            <div class="colomn">
+                <p id="c">Compo</p>
+                <div class="cb">
+                    <div class="cbox">1</div>
+                    <div class="cbox">2</div>
+                    <div class="cbox">3</div>
+                    <div class="cbox">4</div>
+                    <div class="cbox">5</div>
+                    <div class="cbox">6</div>
+                </div>
+            </div>
+        </div>
+        <button class="restart hide "> RESTART</button>
+    </main>
+
+    <script src="cricket.js"></script>
+
+</body>
+</html>
+
