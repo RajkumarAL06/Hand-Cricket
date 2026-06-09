@@ -69,7 +69,7 @@ const headTail = (event) => {
 
         firstline.classList.remove("hide");
         firstline.textContent =
-            `Congratulations ${player}, You won the Toss!`;
+            `Congratulations ${player}, You win the Toss!`;
 
         secondline.classList.remove("hide");
         secondline.textContent =
@@ -81,7 +81,7 @@ const headTail = (event) => {
 
     firstline.classList.remove("hide");
     firstline.textContent =
-        `Sorry ${player}, Compo won the Toss!`;
+        `Sorry ${player}, Compo win the Toss!`;
 
     let compDecision =
         Math.random() < 0.5
@@ -272,7 +272,7 @@ const bowling2=(event)=>{
             win();
             fpscore.textContent = `Player Score:: ${batting1_score}`;
             fcscore.textContent = `Compo Score:: ${bowling2_score}`;
-            fwinner.textContent = "Congratulation! You Win the Game🎉🎉";
+            fwinner.textContent = `Congratulation ${player}! You Win the Game🎉🎉`;
 
         },1000);
         activeTimeouts.push(timeoutId);
@@ -408,7 +408,7 @@ const batting2=(event)=>{
             win();
             fpscore.textContent=`Player Score:: ${batting2_score}`;
             fcscore.textContent=`Compo Score:: ${bowling1_score}`;
-            fwinner.textContent="Congratulation! You Win the Game🎉🎉";
+            fwinner.textContent=`Congratulation ${player}! You Win the Game🎉🎉`;
         },1000);
         activeTimeouts.push(timeoutId);
     }
